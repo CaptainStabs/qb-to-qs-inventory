@@ -1,18 +1,18 @@
 *Convert qb-inventory to qs-inventory.*
 
 # Installation
-  The preferred way is to use the executables located in releases, but should you wish to use the Python scripts, you will need [Python 3.9.15](https://www.python.org/downloads/release/python-3915/).
+  The preferred method of installation is to use the executables located in the releases section. However, if you prefer using the Python scripts, make sure you have [Python 3.9.15](https://www.python.org/downloads/release/python-3915/) installed.
 
-  If you wish to run it from source, you will need to do the following:
+  If you want to run the converter from the source code, follow these steps:
   
-  `git clone https://github.com/CaptainStabs/qb-to-qs-inventory.git`
-  
-  `pip install -r requirements.txt`
+  ```
+  git clone https://github.com/CaptainStabs/qb-to-qs-inventory.git
+  cd qb-to-qs-inventory
+  pip install -r requirements.txt
+  ```
 
-# Important
-  For all exported files, open them in a text editor, and make sure there is no `null` in them. If there is, do the following.
-
-  Using find-and-replace:
+# Important Note
+  After exporting the files from the database, open them in a text editor and ensure there is no null present. If found, perform the following replacements using find-and-replace:
   
     ,null, -> ,
 
