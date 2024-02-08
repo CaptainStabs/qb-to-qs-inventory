@@ -1,7 +1,7 @@
 *Convert qb-inventory to qs-inventory.*
 
 # Installation
-  The preferred method of installation is to use the executables located in the [releases](https://github.com/CaptainStabs/qb-to-qs-inventory/releases) section. However, if you prefer using the Python scripts, make sure you have [Python 3.9.15](https://www.python.org/downloads/release/python-3915/) installed.
+  ~~The preferred method of installation is to use the executables located in the [releases](https://github.com/CaptainStabs/qb-to-qs-inventory/releases) section.~~ However, if you prefer using the Python scripts, make sure you have [Python 3.9.15](https://www.python.org/downloads/release/python-3915/) installed.
 
   If you want to run the converter from the source code, follow these steps:
   
