@@ -33,7 +33,7 @@
      The default filename is `players.csv`, so if you named it that, you can just run `player_converter.exe`
      If you are running them through Python, do `python player_converter.py <filename>`
 
-   6. Import the CSV into `players` table in database. (I converted the csv into a sql insert statement)
+   6. Import the CSV into `players` table in database. (I converted the csv into a sql update statement)
 
 
 # Stash Conversion
