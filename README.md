@@ -1,7 +1,7 @@
 *Convert qb-inventory to qs-inventory.*
 
 # Installation
-  ~~The preferred method of installation is to use the executables located in the [releases](https://github.com/CaptainStabs/qb-to-qs-inventory/releases) section.~~ However, if you prefer using the Python scripts, make sure you have [Python 3.9.15](https://www.python.org/downloads/release/python-3915/) installed.
+  The preferred method of installation is to use the executables located in the [releases](https://github.com/CaptainStabs/qb-to-qs-inventory/releases) section. However, if you prefer using the Python scripts, make sure you have [Python 3.9.15](https://www.python.org/downloads/release/python-3915/) installed.
 
   If you want to run the converter from the source code, follow these steps:
   
@@ -68,5 +68,10 @@
   3. In the commandline, run `trunk_glove_converter.exe <filename>`
   4. Import the resulting file into `inventory_glovebox`
 
-  
+  # Building from Source
+  1. Clone the repo and CD into each tool individually
+  2. Run the following, replacing the path with the path to the numpy binary `libopenblas64__v0.3.23-293-gc2f4bdbb-gcc_10_3_0-2bde3a66a51006b2b53eb373ff767a3f.dll` (or whatever it is for your version):
+```
+pyinstaller --onefile --add-binary="C:/Users/User/miniconda3/envs/converter/Lib/site-packages/numpy.libs:." <script>
+```
   
