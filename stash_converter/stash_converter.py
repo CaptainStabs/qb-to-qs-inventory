@@ -13,10 +13,6 @@ from datetime import datetime as dt
 
 def converter(args):
     df1 = pd.read_csv('stashitems.csv', dtype=str) # Manually remove `null` from the input data. (Ctrl+H)
-
-    pat1 = re.compile(r'\{"\d{1,2}":') # Find beginning index of string, to be removed and converted to list
-    pat2 = re.compile(r'"\d{1,2}":') # Find embedded stupidity
-    pat3 = re.compile(r'\}\}$') # Convert end of table to list
     
     df1['items'] = df1['items'].apply(process_inventory)
 
@@ -24,6 +20,9 @@ def converter(args):
 
 # Qb-inventory
 def process_inventory(line):
+    pat1 = re.compile(r'\{"\d{1,3}":') # Find beginning index of string, to be removed and converted to list
+    pat2 = re.compile(r'"\d{1,3}":') # Find embedded stupidity
+    pat3 = re.compile(r'\}\}$') # Convert end of table to list
     if line:
         if line == '[]':
             # print("Empty stash,", line)
