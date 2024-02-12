@@ -19,7 +19,7 @@ def process_inventory(line):
 def converter(args):
     input_file = args.input_file
     df1 = pd.read_csv(input_file, dtype=str) # load exported data
-    df1['inventory'] = df['inventory'].apply(process_inventory)
+    df1['inventory'] = df1['inventory'].apply(process_inventory)
     df1.to_csv(input_file.replace('.csv', '') + '_output.csv', index=False)
 
 
